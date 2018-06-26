@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+	<meta charset="utf-8">
+	<title>Formulários</title>
+	
+	</head>
+	<body>
+		<form action="cadastro.php" method="POST">
+		
+		<fieldset>
+		<legend> Informações Pessoais</legend>
+		Nome:<br>
+		<input type="text" name="nome" required><br>
+		Email:<br>
+		<input type="email" name="email" required autocomplete="on" placeholder="seuemail@gmail.com"><br>
+		
+		Senha:<br>
+		<input type="password" name="senha" required maxlength="16"><br>
+		
+		
+		IFRN:<br>
+		<input type="radio" name="time" value="zona norte">Zona Norte<br>
+		<input type="radio" name="time" value="central">Natal Central<br>
+		<input type="radio" name="time" value="rocas">Rocas<br>
+		<input type="radio" name="time" value="cidade alta">Cidade Alta<br>
+		Nível de Curso:<br>
+		<input type="checkbox" name="niveldecurso" value="superior"> Nível superior <br>
+		<input type="checkbox" name="niveldecurso" value="medio"> Técnico integrado <br>
+		<input type="checkbox" name="niveldecurso" value="subsequente"> Técnico Subsequente <br>
+		
+		Quantidade: <br>
+		<input type="number" name="quantidade" min="0" max="500"><br><br>
+
+		<input type="range" name="quantidade">
+		<br><br>		
+		
+		cor:<br>
+		<input type="color" name="cor">
+		<br><br>
+		Imagem:<br><br>
+		<input type="file" name="imagem"><br><br>
+		
+		URL:
+		<input type="url" name="site"><br><br>
+		
+		Search:<br>
+		<input type="search" name="pesquisa"><br><br>
+		
+		Telefone:<br>
+		<input type="tel" name="telefone"><br><br>
+		
+		Data:<br>
+		<input type="date" name="data" min="2000-12-31" max: "2018-21-31"><br><br>
+		
+		Hora: <br>
+		<input type:"time" name="hora"><br><br>
+		
+		<input type="submit" name="btn-enviar" value="Enviar"><br>
+		</fieldset>	
+
+			
+	</body>
+<html>	
